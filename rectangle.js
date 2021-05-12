@@ -1,7 +1,5 @@
 //changed export to return entire function rather than 2 separate methods so need module.exports
 module.exports = (x, y, callback) => {
-  //be sure to use this pattern as it is expected for node developers
-  //first check for errors
   if (x <= 0 || y <= 0) {
     //callback will be written in app.js - write the error first 
     callback(new Error(`Rectangle dimensions must be greater than or equal to zero. Received: ${x}, ${y}`));
