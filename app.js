@@ -1,7 +1,5 @@
 //pulls in functions from rectangle.js to use in this file - require is part of node, not vanilla JS
-import {rectangle} from './rectangle.js';
-
-const rect = rectangle; //rect now refers to a function, not an object
+const rect = require('./rectangle'); //rect now refers to a function, not an object
 
 function solveRect(l, w) {
   console.log(`Solving for rectangle with dimensions: ${l}, ${w}`);
